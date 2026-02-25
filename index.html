@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sokoban Neo Web</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar glass">
+        <div>
+          <h1>Sokoban Neo</h1>
+          <p class="subtitle">Edition navigateur</p>
+        </div>
+        <div class="stats">
+          <div><span>Niveau</span><strong id="level">1</strong></div>
+          <div><span>Mouvements</span><strong id="moves">0</strong></div>
+          <div><span>Poussées</span><strong id="pushes">0</strong></div>
+        </div>
+      </header>
+
+      <section class="game-area glass">
+        <canvas id="game" width="960" height="540" aria-label="Jeu Sokoban"></canvas>
+      </section>
+
+      <footer class="controls glass">
+        <p>Flèches / WASD : bouger</p>
+        <p>Z : annuler · R : redémarrer · N : niveau suivant</p>
+      </footer>
+    </main>
+
+    <script src="sokoban.js"></script>
+  </body>
+</html>
